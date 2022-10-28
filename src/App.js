@@ -1,10 +1,14 @@
 import './App.css';
 
+import 'normalize.css';
+
+import { NavBar } from './components';
+
 function App() {
   return (
-    <div className="App">
-     <img alt="substitute logo" src="/temp_logo.png"/>
-     </div>
+    <section>
+      <NavBar />
+    </section>
   );
 }
 
