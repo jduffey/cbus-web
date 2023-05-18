@@ -24,4 +24,4 @@ function NavBar() {
 }
 
 // eslint-disable-next-line
-export { NavBar };
+export default NavBar;
