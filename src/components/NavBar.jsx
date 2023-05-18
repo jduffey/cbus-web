@@ -6,22 +6,23 @@ function NavBar() {
       label: 'About',
       link: '#About',
     },
-    { label: 'Free Code Camp', link: '#' },
+    { label: 'freeCodeCamp.org', link: 'https://www.freecodecamp.org/' },
     { label: 'Discord', link: '#' },
     { label: 'Events', link: '#' },
     { label: 'Contributors', link: '#' },
   ].map((x) => (
-    <li>
+    <li key={x.label}>
       <a href={x.link}>{x.label}</a>
     </li>
   ));
 
   return (
     <nav className="navbar">
-      <ul>{items}</ul>
+      <div className="navbar-container">
+        <ul className="navbar-menu">{items}</ul>
+      </div>
     </nav>
   );
 }
 
-// eslint-disable-next-line
 export default NavBar;
